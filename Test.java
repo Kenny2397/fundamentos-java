@@ -1,6 +1,8 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.function.DoubleToLongFunction;
+import java.util.HashMap;
+import java.util.Set;
 
 public class Test {
 
@@ -68,10 +70,25 @@ public class Test {
         // System.out.println(helloApp.hola());
         System.out.println(HelloWorld.hola());
 
+        // hashmap
 
+        HashMap<String, String> usuarios = new HashMap<String, String>();
 
+        usuarios.put("nombre", "Cynthia");
+        usuarios.put("apellido", "Castillo");
+        usuarios.put("email", "cynthiac@cd.com");
 
+        Set<String> keys = usuarios.keySet();
 
+        System.out.println(keys);
+
+        for (String key : keys) {
+            System.out.println("key : " + key + ", value : " + usuarios.get(key));
+        }
+
+        System.out.println(usuarios.values());
+
+        
 
     }
 }

@@ -6,13 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Test",
-            "request": "launch",
-            "mainClass": "Test",
-            "projectName": "lunes_8d0f5452"
-        },
-        {
-            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
